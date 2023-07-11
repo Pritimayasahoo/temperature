@@ -1,6 +1,6 @@
 <head>
   <script defer src="temp.js"></script>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=2, maximum-scale=2">
   <style>
     #p {
       font-size: 40px;
@@ -10,18 +10,7 @@
       top: 80px; /* Adjust the top position as needed */
     }
 
-    #con {
-      margin: 0 auto; /* Center the div horizontally */
-      max-width: 600px; /* Adjust the max-width as needed */
-      background-color: green;
-      border: 1px solid black;
-      padding: 20px; /* Add padding to create space */
-      position: relative;
-      height:500px; /* Position relative for containing absolute element */
-      background-image:url('sunset.jpg');
-      background-size: cover;
-      background-position: center;
-    }
+    
 
     #sm {
       display: block; /* Ensure the submit button is a block element */
@@ -31,7 +20,7 @@
        /* Adjust the margin as needed */
     }
     #va{
-      margin-top:360px;
+      margin-top:560px;
       padding:5px;
       font-size:20px;
     }
@@ -40,8 +29,15 @@
     }
      @media (max-width:1000px) {
     #con{
-      max-width: 900px; /* Adjust as needed for larger screens */
+      max-width: 500px; /* Adjust as needed for larger screens */
+      max-height:800px;
     }
+  }
+  body {
+    background-image: url("sunset.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
   }
 
   </style>
