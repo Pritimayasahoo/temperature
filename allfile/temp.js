@@ -30,5 +30,6 @@ ry.addEventListener('submit',function(e){
   city=va.value
   va.value=''
   temp(city)
+  va.blur()
 
 })
