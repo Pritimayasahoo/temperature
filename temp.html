@@ -1,0 +1,51 @@
+<head>
+  <script defer src="temp.js"></script>
+  <style>
+    #p {
+      font-size: 40px;
+      color: Green;
+      margin: 0;
+      position: absolute;
+      top: 80px; /* Adjust the top position as needed */
+    }
+
+    #con {
+      margin: 0 auto; /* Center the div horizontally */
+      max-width: 600px; /* Adjust the max-width as needed */
+      background-color: green;
+      border: 1px solid black;
+      padding: 20px; /* Add padding to create space */
+      position: relative;
+      height:500px; /* Position relative for containing absolute element */
+      background-image:url('sunset.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+
+    #sm {
+      display: block; /* Ensure the submit button is a block element */
+      margin-top: 10px;
+      border-radius:3px;
+      border:None;
+       /* Adjust the margin as needed */
+    }
+    #va{
+      margin-top:360px;
+      padding:5px;
+      font-size:20px;
+    }
+    h1{
+      color:blue
+    }
+  </style>
+</head>
+<body>
+  <div id='con'>
+    <h1 id='p'></h1>
+    <h1>TEMPERATURE APP</h1>
+    <form id='fr' method='POST' action=''>
+      <input type='text' id='va'>
+      <input id='sm' type='submit'>  
+    </form>
+  </div>
+</body>
