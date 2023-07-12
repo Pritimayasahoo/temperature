@@ -39,13 +39,36 @@
     background-repeat: no-repeat;
     background-position: center center;
   }
+ 
+  #fr input[type="submit"] {
+    height: 30px; /* Reset the height to auto */
+    padding: 5px 50px; 
+    margin-top:20px;/* Adjust the padding as needed */
+    margin-left:50px;
+  }
+  #fr input[type="submit"]:hover{
+    background-color:green;
+  }
+  h1{
+    margin-left:420px;
+    font-size:45px;
+  }
+  @media (max-width: 1000px) {
+    #p{
+      font-size:20px
+    }
+    h1{
+      margin-left:40px;
+      font-size:30px;
+    }
 
+    }
   </style>
 </head>
 <body>
   <div id='con'>
     <h1 id='p'></h1>
-    <h1>TEMPERATURE APP</h1>
+    <h1>TEMPERATURE&nbsp;&nbsp;APP</h1>
     <form id='fr' method='POST' action=''>
       <input type='text' id='va'>
       <input id='sm' type='submit'>  

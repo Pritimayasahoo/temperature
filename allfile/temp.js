@@ -15,8 +15,8 @@ const temp=function(city)
       return response.json()
     }).then(function(data){
       console.log(data)
-      console.log(`City temperature is  ${(data.main.temp-273.15).toFixed(2)} C`)
-      show.innerText=`Temperature in ${data.name} is ${(data.main.temp-273.15).toFixed(2)} C`
+      console.log(`City temperature is  ${(data.main.temp-273.15).toFixed(2)}C`)
+      show.innerText=`Right now ${(data.main.temp-273.15).toFixed(2)}\u00B0 C in ${data.name}`
     }).catch(function(err){
       alert(err.message)
       console.log(err)
