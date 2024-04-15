@@ -3,15 +3,11 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=2, maximum-scale=2">
   <style>
-    #p {
-      font-size: 40px;
-      color: Green;
-      margin: 0;
-      position: absolute;
-      top: 80px; /* Adjust the top position as needed */
+    .weather{
+      font-size: 25px;
+      color:blue;
+      position: absolute;  
     }
-
-    
 
     #sm {
       display: block; /* Ensure the submit button is a block element */
@@ -20,13 +16,16 @@
       border:None;
        /* Adjust the margin as needed */
     }
+    #sm:hover {
+      cursor: pointer;
+    }
     #va{
       margin-top:360px;
       padding:5px;
       font-size:20px;
     }
     h1{
-      color:blue
+      color:darkgreen
     }
      @media (max-width:1000px) {
     #con{
@@ -68,10 +67,14 @@
 </head>
 <body>
   <div id='con'>
-    <h1>TEMPERATURE&nbsp;&nbsp;APP</h1> 
-    <h2 id='p'></h2>
+    <h1>WEATHER&nbsp;&nbsp;APP</h1> 
+    <div class="weather">
+    <h2 id='temp'></h2>
+    <h2 id="wind"></h2>
+    <h2 id="humidity"></h2>
+    </div> 
     <form id='fr' method='POST' action=''>
-      <input type='text' id='va'>
+      <input type='text' id='va' required>
       <input id='sm' type='submit'>  
     </form>
   </div>
